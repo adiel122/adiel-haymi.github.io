@@ -1,43 +1,191 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-  <!-- ... head content ... -->
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Adiel Haymi – Automation Team Leader</title>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;600;800&display=swap" rel="stylesheet">
+  <script src="https://unpkg.com/scrollreveal"></script>
+  <style>
+    * {
+      margin: 0;
+      padding: 0;
+      box-sizing: border-box;
+    }
+    body {
+      font-family: 'Inter', sans-serif;
+      background: linear-gradient(to bottom right, #e0f7fa, #ffffff);
+      color: #1c1c1c;
+      line-height: 1.7;
+      overflow-x: hidden;
+    }
+    .intro-screen {
+      position: fixed;
+      top: 0;
+      left: 0;
+      width: 100vw;
+      height: 100vh;
+      background: #003366;
+      color: #fff;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      flex-direction: column;
+      z-index: 9999;
+      animation: fadeOut 1s 2.5s forwards;
+    }
+    .intro-screen h1 {
+      font-size: 2.5rem;
+      animation: slideUp 1s ease-in-out;
+    }
+    @keyframes slideUp {
+      from { transform: translateY(40px); opacity: 0; }
+      to { transform: translateY(0); opacity: 1; }
+    }
+    @keyframes fadeOut {
+      to { opacity: 0; visibility: hidden; }
+    }
+    header {
+      background: #003366;
+      color: white;
+      padding: 2rem;
+      text-align: center;
+      box-shadow: 0 4px 10px rgba(0,0,0,0.15);
+    }
+    header h1 {
+      font-size: 2.8rem;
+      font-weight: 800;
+    }
+    header h2 {
+      font-weight: 400;
+      font-size: 1.3rem;
+      margin-top: 0.5rem;
+    }
+    .links {
+      margin-top: 1.2rem;
+    }
+    .links a, .btn {
+      display: inline-block;
+      margin: 0.5rem;
+      text-decoration: none;
+      color: #fff;
+      background: #007acc;
+      padding: 0.6rem 1.2rem;
+      border-radius: 6px;
+      font-weight: 600;
+      transition: background 0.3s;
+    }
+    .links a:hover, .btn:hover {
+      background: #005999;
+    }
+    .container {
+      max-width: 1000px;
+      margin: auto;
+      padding: 2rem 1.5rem;
+    }
+    section {
+      margin-bottom: 3rem;
+    }
+    h3 {
+      font-size: 1.8rem;
+      color: #003366;
+      margin-bottom: 1rem;
+    }
+    ul li {
+      margin-bottom: 0.6rem;
+    }
+    form {
+      display: flex;
+      flex-direction: column;
+      gap: 1rem;
+      background: #f9f9f9;
+      padding: 1.5rem;
+      border-radius: 8px;
+      box-shadow: 0 0 8px rgba(0,0,0,0.05);
+    }
+    form input, form textarea {
+      padding: 0.8rem;
+      border: 1px solid #ccc;
+      border-radius: 4px;
+      font-size: 1rem;
+      width: 100%;
+    }
+    footer {
+      text-align: center;
+      padding: 2rem;
+      background: #e0e0e0;
+      font-size: 0.9rem;
+    }
+    @media (max-width: 600px) {
+      header h1 { font-size: 1.8rem; }
+      header h2 { font-size: 1rem; }
+      .links a, .btn {
+        display: block;
+        width: 100%;
+        margin: 0.5rem 0;
+        text-align: center;
+      }
+    }
+  </style>
 </head>
-<body>
-  <!-- ... intro-screen and header ... -->
+$1
+
+  <nav style="background: #f0f0f0; padding: 1rem; text-align: center; position: sticky; top: 0; z-index: 1000; box-shadow: 0 2px 4px rgba(0,0,0,0.05);">
+    <a href="#about" class="btn">About</a>
+    <a href="#expertise" class="btn">Expertise</a>
+    <a href="#initiatives" class="btn">Initiatives</a>
+    <a href="#philosophy" class="btn">Philosophy</a>
+    <a href="#contact" class="btn">Contact</a>
+  </nav>
 
   <div class="container">
-    <section class="fade-up">
+    <section id="about" class="fade-up">
       <h3>About Me</h3>
       <p>
-        I’m a highly motivated Automation Team Leader and QA strategist, passionate about building future-proof, scalable testing systems. With years of hands-on leadership in enterprise-grade automation, I bring technical precision, mentoring skills, and strategic vision to help companies release faster, with confidence.
+        I’m a passionate Automation Team Leader and software quality advocate, combining deep technical expertise with strategic thinking. My work focuses on building resilient, maintainable, and scalable automation infrastructures based on SOLID principles, clean code, and design patterns. I bridge the gap between development and testing with a DevOps mindset, empowering teams to deliver with speed and confidence.
       </p>
     </section>
 
-    <section class="fade-up">
+    <section id="expertise" class="fade-up">
       <h3>Core Expertise</h3>
       <ul>
-        <li>End-to-End Automation (.NET, Selenium, NUnit)</li>
+        <li>Test Architecture based on SOLID Principles & Clean Code</li>
+        <li>End-to-End Automation Development (.NET, Selenium, NUnit)</li>
         <li>CI/CD Pipelines with Jenkins & AWS</li>
-        <li>Automation Design Patterns & Architecture</li>
-        <li>Network Layer Testing (Postman, Proxy, DevTools)</li>
-        <li>AI-Augmented Testing Agents, Smart Failure Analysis</li>
-        <li>QA Training, Career Coaching, and Interview Readiness</li>
+        <li>Infrastructure for Remote Testing (Selenoid, Docker, Grid)</li>
+        <li>Custom Logging, Monitoring & Flaky Test Analytics</li>
+        <li>Mentoring, QA Career Development, and Team Enablement</li>
       </ul>
     </section>
 
-    <section class="fade-up">
-      <h3>Highlighted Projects</h3>
-      <ul>
-        <li>🧠 AI Auto-Debug Agent for real-time error analysis and fix recommendations</li>
-        <li>📊 Custom Redis Dashboard visualizing flaky test metrics</li>
-        <li>🛠️ Distributed Automation Platform supporting 5K+ parallel sessions</li>
-        <li>📦 Integration of Selenium Grid with smart logging and cloud reporting</li>
-      </ul>
-    </section>
+    <section id="initiatives" class="fade-up">
+  <h3>Selected Engineering Initiatives</h3>
+  <p style="margin-bottom: 1rem;">
+    Here are a few key engineering contributions where I combined strategic thinking with technical depth to solve meaningful problems at scale:
+  </p>
+  <ul>
+    <li>🤖 Engineered a self-healing automation layer that leverages AI to identify test failures, classify exception types, and recommend fixes — dramatically reducing investigation time</li>
+    <li>📡 Designed a full-stack observability dashboard for flaky test detection, utilizing Redis, HTML rendering, and pipeline-linked metadata</li>
+    <li>🌐 Built a scalable automation infrastructure with Docker, Selenoid, and Grid to support over 5,000 concurrent test sessions across dynamic environments</li>
+    <li>📥 Implemented Jenkins pipelines with intelligent retry logic, rich logging, Slack alerts, and seamless artifact collection</li>
+  </ul>
+</section>
 
-  
-    <section class="fade-up">
+<section id="philosophy" class="fade-up">
+  <h3>Automation Philosophy & Differentiators</h3>
+  <p style="margin-bottom: 1rem;">
+    I bring a holistic and innovative mindset to automation — one that integrates engineering excellence, scalable infrastructure, and human-centric enablement:
+  </p>
+  <ul>
+    <li>🧠 Advocate of test optimization with AI-driven prioritization engines, focusing execution around high-risk changes and business-critical flows</li>
+    <li>🕸️ Pioneer in integrating traffic-based validation into test frameworks using browser DevTools and proxy inspection for backend contract assurance</li>
+    <li>📘 Built intelligent onboarding systems — documentation bots + test environments — that cut new hire ramp-up time in half</li>
+    <li>🎓 Public educator in QA: combining technical teaching with career mentorship, interview prep, and simulation-based learning</li>
+    <li>🧭 My automation decisions are always guided by SOLID principles, clarity, reusability, and long-term maintainability</li>
+  </ul>
+</section>
+
+    <section id="contact" class="fade-up">
       <h3>Contact Me</h3>
       <form action="mailto:adiel.haymi@gmail.com" method="POST" enctype="text/plain">
         <input type="text" name="name" placeholder="Your Name" required>
