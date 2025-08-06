@@ -1,90 +1,66 @@
 <!DOCTYPE html>
-<html lang="he" dir="rtl">
+<html lang="en">
 <head>
-  <meta charset="UTF-8" />
-  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
-  <title>Adiel Haymi – Automation Leader</title>
-  <style>
-    body {
-      font-family: Arial, sans-serif;
-      background-color: #f4f4f4;
-      margin: 0;
-      padding: 0;
-      direction: rtl;
-    }
-    .container {
-      max-width: 800px;
-      margin: auto;
-      background: white;
-      padding: 2rem;
-      box-shadow: 0 0 10px rgba(0,0,0,0.1);
-    }
-    h1, h2 {
-      color: #003366;
-    }
-    a {
-      color: #0066cc;
-      text-decoration: none;
-    }
-    .links a {
-      margin-left: 1rem;
-    }
-    .section {
-      margin-bottom: 2rem;
-    }
-  </style>
+  <!-- ... head content ... -->
 </head>
 <body>
+  <!-- ... intro-screen and header ... -->
+
   <div class="container">
-    <h1>עדיאל היימי</h1>
-    <h2>Team Lead | Automation Architect | QA Lecturer</h2>
-
-    <div class="links">
-      <a href="https://www.linkedin.com/in/adiel-haymi-0b2591122/" target="_blank">LinkedIn</a>
-      <a href="https://github.com/adiel-haymi" target="_blank">GitHub</a>
-      <a href="mailto:adiel.haymi@centrical.com">Email</a>
-    </div>
-
-    <div class="section">
-      <h2>עליי</h2>
+    <section class="fade-up">
+      <h3>About Me</h3>
       <p>
-        מהנדס אוטומציה עם ניסיון עשיר בפיתוח מסגרות בדיקה מתקדמות בסביבת .NET, Selenium ו־Jenkins. מוביל צוותים בתחום הבדיקות, מרצה לקורסי QA, ויועץ בהטמעת פתרונות בדיקה חכמים בעידן ה־AI.
+        I’m a highly motivated Automation Team Leader and QA strategist, passionate about building future-proof, scalable testing systems. With years of hands-on leadership in enterprise-grade automation, I bring technical precision, mentoring skills, and strategic vision to help companies release faster, with confidence.
       </p>
-    </div>
+    </section>
 
-    <div class="section">
-      <h2>תחומי התמחות</h2>
+    <section class="fade-up">
+      <h3>Core Expertise</h3>
       <ul>
-        <li>פיתוח אוטומציה מקצה לקצה (.NET, Selenium, NUnit)</li>
-        <li>CI/CD עם Jenkins וסביבת AWS</li>
-        <li>Design Patterns לאוטומציה</li>
-        <li>ניתוח תעבורת רשת (DevTools, Proxy, Postman)</li>
-        <li>הטמעת Feature Flags, Dashboard, Redis Integration</li>
-        <li>הדרכת סטודנטים והכנה לראיונות QA</li>
+        <li>End-to-End Automation (.NET, Selenium, NUnit)</li>
+        <li>CI/CD Pipelines with Jenkins & AWS</li>
+        <li>Automation Design Patterns & Architecture</li>
+        <li>Network Layer Testing (Postman, Proxy, DevTools)</li>
+        <li>AI-Augmented Testing Agents, Smart Failure Analysis</li>
+        <li>QA Training, Career Coaching, and Interview Readiness</li>
       </ul>
-    </div>
+    </section>
 
-    <div class="section">
-      <h2>פרויקטים נבחרים</h2>
+    <section class="fade-up">
+      <h3>Highlighted Projects</h3>
       <ul>
-        <li>👨‍💻 פיתוח מערכת ניתוח כשלונות אוטומטית (Auto-Debug Analyzer) לזיהוי שגיאות והצעות לפתרון</li>
-        <li>📊 דשבורד עבור בדיקות לא יציבות עם Redis ו־HTML Visualization</li>
-        <li>🤖 בניית Agent AI לניתוח תוצאות בדיקות והגשת המלצות</li>
-        <li>💡 תשתית אוטומציה מותאמת לארגון עם ניהול session, ניתוחים סטטיסטיים ותמיכה בענן</li>
+        <li>🧠 AI Auto-Debug Agent for real-time error analysis and fix recommendations</li>
+        <li>📊 Custom Redis Dashboard visualizing flaky test metrics</li>
+        <li>🛠️ Distributed Automation Platform supporting 5K+ parallel sessions</li>
+        <li>📦 Integration of Selenium Grid with smart logging and cloud reporting</li>
       </ul>
-    </div>
+    </section>
 
-    <div class="section">
-      <h2>מרצה ומדריך</h2>
-      <p>
-        מלמד קורסי QA פרקטיים הכוללים: מתודולוגיות בדיקה, SQL, HTML/CSS, תכנון STR/STD/STP, הכנה ל־ISTQB, והכנה מעשית לעולם העבודה. כולל סימולציות ריאיון ומיתוג אישי.
-      </p>
-    </div>
-
-    <div class="section">
-      <h2>צור קשר</h2>
-      <p>📩 adiel.haymi@centrical.com</p>
-    </div>
+  
+    <section class="fade-up">
+      <h3>Contact Me</h3>
+      <form action="mailto:adiel.haymi@gmail.com" method="POST" enctype="text/plain">
+        <input type="text" name="name" placeholder="Your Name" required>
+        <input type="email" name="email" placeholder="Your Email" required>
+        <textarea name="message" rows="5" placeholder="Your Message..." required></textarea>
+        <button type="submit" class="btn">Send Message</button>
+      </form>
+    </section>
   </div>
+
+  <footer>
+    <p>© 2025 Adiel Haymi | adiel.haymi@gmail.com</p>
+  </footer>
+
+  <script>
+    ScrollReveal().reveal('.fade-up', {
+      duration: 1000,
+      distance: '20px',
+      easing: 'ease-out',
+      origin: 'bottom',
+      interval: 200,
+      reset: false
+    });
+  </script>
 </body>
 </html>
